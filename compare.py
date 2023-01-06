@@ -68,7 +68,7 @@ def get_score(file1, file2):
     len_f_1 = sum([len(w) for w in file1])
     len_f_2 = sum([len(w) for w in file2])
 
-    return 1 - compare(''.join(file1), ''.join(file2)) / (len_f_1 + len_f_2)
+    return round(1 - compare(''.join(file1), ''.join(file2)) / (len_f_1 + len_f_2),2)
 
 
 # Основный блок, где читаются файлы для сравнения и записывается их результат
