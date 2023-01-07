@@ -88,4 +88,4 @@ if __name__ == '__main__':
     parser.add_argument('outdir', type=str, help='Output dir for score file')
     args = parser.parse_args()
 
-    main('input.txt', 'output.txt')
+    main(args.indir, args.outdir)
